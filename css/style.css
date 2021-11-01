@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+body{
+    display: grid;
+    grid-template-columns: auto minmax(100px, 300px) minmax(600px, 1000px) minmax(50px, 200px) auto;
+    grid-template-rows: auto 100px auto 50px;
+    grid-template-areas:
+    ". icon header header ."
+    ". globnav globnav globnav ."
+    ". sidenav main aside ."
+    ". footer footer footer .";
+    background-color: white;
+    background-size: 30%;
+}
+
+html, body{
+    height: 100%;
+}
+
+
+
+@media screen and (max-width: 0px)
+{
+    body{
+        grid-template-columns: minmax(375px, 700px) 10px;
+        grid-template-rows: auto auto auto auto 50px;
+        grid-template-areas:
+        "header ."
+        "globnav ."
+        "sidenav ."
+        "main ."
+        "footer .";
+    }
+
+    aside{
+        visibility: hidden;
+        display: none;
+    }
+}

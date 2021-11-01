@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="css/style.css">
+    <title>D. Boxmodellen</title>
+</head>
+<body id="firstPage">
+
+    <nav id = "globalNav">
+        <ul>
+            <li><a href=index.html>D. BOXMODELLEN</a></li>
+            <li><a href=page2.html>E. NAVIGERING</a></li>
+            <li><a href=page3.html>F. MÅLGRUPPSANALYS OCH KRAVSPECIFIKATION</a></li>
+        </ul>
+    </nav>
+    <nav id = "localNav">
+        <p>Delfrågor:</p>
+        <ul>
+            <li><a href=#part1>1. Boxmodellen</a></li>
+            <li><a href=#part2>2. Content-box och sizing</a></li>
+        </ul>
+    </nav>
+
+    <section id="icon"></section>
+
+    <header>
+        <h1>D. Boxmodellen</h1>
+    </header>
+
+    <main>
+        <h2 id="part1">1. Beskriv <i>boxmodellen</i> och ge en kort förklaring av var och en av de CSS-egenskaper som ingår i den.</h2>
+        <p>Boxmodellen är elementens utforming som består av olika sorters boxar. Boxarna är olika egenskaper, t.ex. innehållet, bredden eller höjden av elementet.</p>
+
+        <img src="images/boxmodell.png" alt="boxmodell">
+        
+        <h3>Innehåll</h3>
+        <p>Innehåll är själva innehållet av elementet, t.ex. texten i ett textelement.</p>
+        <h3>Width</h3>
+        <p>Width är bredden av innehållet.</p>
+        <h3>Height</h3>
+        <p>Height är höjden av innehållet.</p>
+        <h3>Padding</h3>
+        <p>Padding är det inre avståndet mellan innehållet och bordern.</p>
+        <h3>Border</h3>
+        <p>Border är en slags ram som ramar in elementet, detta kan göras synligt.</p>
+        <h3>Margin</h3>
+        <p>Margin är det yttre avståndet mellan elementet och andra element. Marginaler överlappar varandra i höjdled men ligger kant i kant i sidled.</p>
+        <h3>Top</h3>
+        <p>Top är avståndet mellan boxens övre kant och omgivande element.</p>
+        <h3>Bottom</h3>
+        <p>Bottom är avståndet mellan boxens nedre kant och omgivande element.</p>
+        <h3>Left</h3>
+        <p>Left är avståndet mellan boxens vänstra kant och omgivande element.</p>
+        <h3>Right</h3>
+        <p>Right är avståndet mellan boxens högra kant och omgivande element.</p>
+        <h3>Total bredd</h3>
+        <p>Total bredd är hela elementets bredd och kan beskrivas som <i>width + 2*padding + 2*border + 2*margin</i></p>
+        <p class="source">Källa: <a href= "https://www.youtube.com/watch?v=1MdAxNMkVtY" target="_blank">Föreläsning F4a, Körnefors Rune</a></p>
+        <h2 id="part2">2. Beskriv också skillnaden mellan värdena <i>content-box</i> och <i>border-box</i> för CSS-egenskapen <i>box-sizing</i>.</h2>
+        <p><i>Content-box</i> är default inställningen på CSS boxar. Det innebär att width och height är innehållets width och height och eventuella värden på border och padding läggs till på den totala höjden och bredden utöver detta. <i>Border-box</i> gör så att border och padding räknas in i elementets width och height, dvs. ändrar man width så är det den totala bredden som ändras och inte innehållets.</p>
+        <p class="source">Källa: <a href= "https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing" target="_blank">Box-Sizing, Mozilla</a></p>
+    </main>
+
+    <aside>
+        <p>BOXMODELLEN</p>
+    </aside>
+
+    <footer>Uppgift 2 i Webbteknik 1 av Linnéa Lindblom</footer>
+</body>
+</html>

@@ -9,7 +9,7 @@
     <title>Växjös djurfristad</title>
 </head>
 
-<body>
+<body id="startPage">
 
     <header>
         <img src="images/VäxjösDjurfristad_FrontPage.jpg" alt="Växjö Djurfristad">
@@ -18,8 +18,15 @@
     <nav id="globalNav">
         <ul>
             <li><a href="index.html">Startsida</a></li>
-            <li><a href="animals.html">Våra djur</a></li>
-            <li><a href="about.html">Om fristaden</a></li>
+            <div class="dropdownmenu">
+                <li><a href="about.html">Om fristaden</a></li>
+                <div class="dropdowncontent">
+                    <a href="about.html">Föreningen</a>
+                    <a href="about.html">Bondgården</a>
+                    <a href="about.html">Hönshuset</a>
+                    <a href="animals.html">Våra djur</a>
+                </div>
+            </div>
             <li><a href="store.html">Djurens rättigheter</a></li>
             <li><a href="about.html">Bli månadsgivare</a></li>
         </ul>
@@ -44,7 +51,7 @@
 
     <footer>
         Växjös djurfristad © 2021 Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
-        <img src="images/logo_size_invert.jpg" alt=logo>
+        <img src="images/logo/logo_size_invert.jpg" alt=logo>
     </footer>
 
 </body>

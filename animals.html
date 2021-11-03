@@ -8,7 +8,7 @@
     <title>Shop</title>
 </head>
 
-<body>
+<body id="animalsPage">
     <header>
         <h1>Våra djur</h1>
     </header>
@@ -16,8 +16,15 @@
     <nav id="globalNav">
         <ul>
             <li><a href="index.html">Startsida</a></li>
-            <li><a href="animals.html">Våra djur</a></li>
-            <li><a href="about.html">Om fristaden</a></li>
+            <div class="dropdownmenu">
+                <li><a href="about.html">Om fristaden</a></li>
+                <div class="dropdowncontent">
+                    <a href="about.html">Föreningen</a>
+                    <a href="about.html">Bondgården</a>
+                    <a href="about.html">Hönshuset</a>
+                    <a href="animals.html">Våra djur</a>
+                </div>
+            </div>
             <li><a href="store.html">Djurens rättigheter</a></li>
             <li><a href="about.html">Bli månadsgivare</a></li>
         </ul>
@@ -25,18 +32,32 @@
 
     <nav id="localNav">
         <ul>
-            <li>Djur som söker hem</li>
-            <li>På bondgården</li>
-            <li>I hönshuset</li>
+            <li></li>
         </ul>
     </nav>
 
     <main>
-        <a href= "index.html" class=""><img src="images/placeholder.jpg" alt="1"></a>
-        <a href= "index.html" class="product"><img src="images/placeholder.jpg" alt="2"></a>
-        <a href= "index.html" class="product"><img src="images/placeholder.jpg" alt="3"></a>
-        <a href= "index.html" class="product"><img src="images/placeholder.jpg" alt="4"></a>
-        <a href= "index.html" class="product"><img src="images/placeholder.jpg" alt="5"></a>
+
+        <div class = "animal">
+            <a href= "index.html" class="farmanimal"><img src="images/placeholder.jpg" alt="1"></a>
+            <p class="animalInfo">Detta är bla bla</p>
+        </div>
+        <div class = "animal">
+            <a href= "index.html" class="coopanimal"><img src="images/placeholder.jpg" alt="2"></a>
+            <p class="animalInfo">Detta är bla bla</p>
+        </div>
+        <div class = "animal">
+            <a href= "index.html" class="farmanimal"><img src="images/placeholder.jpg" alt="3"></a>
+            <p class="animalInfo">Detta är bla bla</p>
+        </div>
+        <div class = "animal">
+            <a href= "index.html" class="coopanimal"><img src="images/placeholder.jpg" alt="4"></a>
+            <p class="animalInfo">Detta är bla bla</p>
+        </div>
+        <div class = "animal">
+            <a href= "index.html" class="coopanimal"><img src="images/placeholder.jpg" alt="5"></a>
+            <p class="animalInfo">Detta är bla bla</p>
+        </div>
 
         <div id="contactInfo">
             <div class="infoBox">

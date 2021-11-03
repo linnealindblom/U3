@@ -5,25 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="Stylesheet" href="css/style.css">
-    <title>D. Boxmodellen</title>
+    <title>Om fristaden</title>
 </head>
-<body>
+
+<body  id="aboutPage">
 
     <header>
-        <h1>header</h1>
+        <h1>Föreningen Växjö Djurfristad</h1>
     </header>
 
     <nav id="globalNav">
         <ul>
             <li><a href="index.html">Startsida</a></li>
-            <li><a href="animals.html">Våra djur</a></li>
-            <li><a href="about.html">Om fristaden</a></li>
+            <div class="dropdownmenu">
+                <li><a href="about.html">Om fristaden</a></li>
+                <div class="dropdowncontent">
+                    <a href="about.html">Föreningen</a>
+                    <a href="about.html">Bondgården</a>
+                    <a href="about.html">Hönshuset</a>
+                    <a href="animals.html">Våra djur</a>
+                </div>
+            </div>
             <li><a href="store.html">Djurens rättigheter</a></li>
             <li><a href="about.html">Bli månadsgivare</a></li>
         </ul>
     </nav>
 
+    <nav id="localNav">
+        <ul>
+            <li>hej</li>
+        </ul>
+    </nav>
+
     <main>
+        <p>Växjö Djurfristad öppnades 1996 av Pernilla Pernillasson och Gert Gertsdotter för att de ville ge ett hem åt djur som folk inte tyckte hade ett värde längre. De började 1996 med att rädda slakt- och mjölkkor men det utökades sedan till höns, kaniner och de har även periodvis haft illrar. Idag är det en sprudlande förening med tiotalet volontärer som hjälps åt att hålla fristaden vid liv.</p>
+
+        <div id="imagegallery">
+            <div class="gallerycontent">
+                <img src="images/old-couple-g88f266a67_1920.jpg" alt="Pernilla Pernillasson och Gert Gertsdotter">
+                Pernilla Pernillasson och Gert Gertsdotter
+            </div>
+            <div class="gallerycontent">
+                <img src="images/farm-yard-g87456434c_1920.jpg" alt="Farm">
+                Bondgården
+            </div>
+            <div class="gallerycontent">
+                <img src="images/campfire-g23c1e7c4f_1920.jpg" alt="Bonding">
+                Bonding aktivitet med volontärer
+            </div>
+        </div>
     </main>
 
     <footer>

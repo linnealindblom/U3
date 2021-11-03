@@ -13,6 +13,21 @@ body{
     background-size: 100vw 100vh;
 }
 
+#aboutPage{
+    grid-template-columns: auto minmax(100px, 300px) minmax(600px, auto) auto;   
+    grid-template-areas:
+    ". nav nav ."
+    ". locnav locnav ."
+    ". header header ."
+    ". main main ."
+    ". footer footer .";
+}
+
+#localNav{
+    grid-area: locnav;
+    background-color: rgb(102, 197, 241);
+}
+
 html, body{
     height: 100%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -36,18 +51,52 @@ main{
     background-color: rgba(255, 255, 255, 0.452);
 }
 
-.product > img{
-    border-radius: 50%;
-    opacity: 0.7;
-    transition: all 1s;
-    border: 2px solid black;
+#imagegallery{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.product > img:hover{
+.gallerycontent{
+    height: 40vh;
+    flex-grow: 1;
+    margin: 10px;
+    border: solid rgb(37, 37, 37);
+}
+
+.gallerycontent img{
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+.animal img{
+    border-radius: 50%;
+    opacity: 0.7;
+    float: left;
+    margin: 10px;
+    
+    z-index: 1;
+    position: relative;
+
+    transition: all 1s;
+}
+
+.animal img:hover{
     border-radius: 0%;
     opacity: 1;
     transform: scale(2);
+    border: 2px solid rgb(49, 49, 49);
     box-shadow: black 5px 5px 10px;
+    z-index: 100;
+}
+
+.animalInfo{
+    display: none;
+}
+
+#animaldropdown{
+
 }
 
 #contactInfo{
@@ -116,6 +165,24 @@ nav{
 #globalNav a:hover, #globalNav a:active
 {
     background-color: rgb(14, 125, 177);
+}
+
+.dropdownmenu{
+    position: relative;
+    display:inline-block;
+}
+
+.dropdowncontent{
+    display:none;
+    position: absolute;
+    min-width: 160px;
+    background-color: rgb(18,144,203);
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdownmenu:hover .dropdowncontent {
+    display: block;
 }
 
 /*FOOTER*/

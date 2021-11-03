@@ -33,7 +33,7 @@ header img{
 /*MAIN*/
 main{
     grid-area: main;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.452);
 }
 
 .product > img{
@@ -52,7 +52,7 @@ main{
 
 #contactInfo{
     margin-left: 20px;
-    background-color: yellow;
+    background-color: rgb(255, 255, 255);
 }
 
 .infoBox img{

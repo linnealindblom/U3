@@ -63,6 +63,16 @@ main{
     float: inline-start;
 }
 
+.infoBox a{
+    text-decoration: none;
+    color: black;
+}
+
+.infoBox a:hover, .infoBox a:active
+{
+    color: rgb(14, 125, 177);
+}
+
 /*NAV*/
 nav{
     grid-area: nav;

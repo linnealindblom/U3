@@ -99,6 +99,7 @@ main p{
 }
 
 #contactInfo{
+    clear:both;
     margin-left: 20px;
     background-color: rgb(255, 255, 255);
 }

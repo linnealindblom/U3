@@ -195,7 +195,7 @@ nav ul > li{
 
 #localNav{
     grid-area: locnav;
-    background-color: rgb(170, 212, 146);
+    background-color: rgb(87, 176, 218);
 }
 
 #localNav a{
@@ -204,12 +204,12 @@ nav ul > li{
 
 #localNav a:link, #localNav a:visited
 {
-    background-color: rgb(170, 212, 146);
+    background-color: rgb(87, 176, 218);
 }
 
 #localNav a:hover, #localNav a:active
 {
-    background-color: rgb(123, 172, 94);
+    background-color: rgb(112, 190, 226);
 }
 
 .dropdownmenu{

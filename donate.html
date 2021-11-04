@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="Stylesheet" href="css/style.css">
-    <title>Om fristaden</title>
+    <title>Växjös djurfristad</title>
 </head>
 
-<body  id="localNavPage">
+<body>
 
     <header>
-        <h1>Föreningen Växjö Djurfristad</h1>
+        <h1>Bryr du dig om djur? Bli månadsgivare hos oss!</h1>
     </header>
-    
+
     <nav id="globalNav">
         <ul>
             <li><a href="index.html">Startsida</a></li>
@@ -30,31 +31,40 @@
         </ul>
     </nav>
 
-    <nav id="localNav">
-        <ul>
-            <li><a href="about.html">Föreningen</a></li>
-            <li><a href="farm.html">Bondgården</a></li>
-            <li><a href="coop.html">Hönshuset</a></li>
-        </ul>
-    </nav>
-
     <main>
-        <p>Växjö Djurfristad öppnades 1996 av Pernilla Pernillasson och Gert Gertsdotter för att de ville ge ett hem åt djur som folk inte tyckte hade ett värde längre. De började 1996 med att rädda slakt- och mjölkkor men det utökades sedan till höns, kaniner och de har även periodvis haft illrar. Idag är det en sprudlande förening med tiotalet volontärer som hjälps åt att hålla fristaden vid liv.</p>
-        <p>Vi har även försäljning av egen producerade varor, se <b>butik</b> samt sidorna <b>bondgården</b> och <b>hönshuset</b> för vidare information.</p>
+        <p>Som månadsgivare bidrar du till mat, husrum och allt annat man kan tänkas behöva till våra djur. Att vara månadsgivare hos oss innebär att du bryr dig om djuren. </p>
+        <p>Du kan avbryta din betalning när du vill, det finns ingen bindningstid.</p>
 
-        <div id="imagegallery">
-            <div class="gallerycontent">
-                <img src="images/old-couple-g88f266a67_1920.jpg" alt="Pernilla Pernillasson och Gert Gertsdotter" title="Pernilla Pernillasson och Gert Gertsdotter på 20 års jubileumet">
-            </div>
-            <div class="gallerycontent">
-                <img src="images/farm-yard-g87456434c_1920.jpg" alt="Farm" title="Bondgården">
-            </div>
-            <div class="gallerycontent">
-                <img src="images/campfire-g23c1e7c4f_1920.jpg" alt="Bonding" title="Bonding aktivitet med volontärer 2016">
-            </div>
-        </div>
+        <form id="donation">
+            <fieldset>
+                <legend>Namn</legend>
+                <div>
+                    <input type="text" placeholder="förnamn" required>
+                    <input type="text" placeholder="efternamn" required>
+                </div>
+                <legend>E-postadress</legend>
+                <div>
+                    <input type="text" placeholder="namn@epost.se" required>
+                </div>
+                <legend>Hur mycket vill du bidra med i månaden?</legend>
+                <div>
+                    <input type="radio" id="20kr" name="contribution" required>
+                    <label for="20kr">20kr</label><br>
+                    <input type="radio" id="50kr" name="contribution" required>
+                    <label for="50kr">50kr</label><br>
+                    <input type="radio" id="100kr" name="contribution" required>
+                    <label for="100kr">100kr</label><br>
+                </div>
+                <legend>Vill du prenumerera på vårt nyhetsbrev?</legend>
+                <div>
+                    <input type="checkbox">
+                </div>
+                <div>
+                    <input type="submit" value="Jag vill bli månadsgivare">
+                </div>
+            </fieldset>
+        </form>
 
-        
         <div id="contactInfo">
             <div class="infoBox">
                 <img src="images/icons/icons8-email-48.png" alt="email">

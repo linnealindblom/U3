@@ -123,6 +123,8 @@ main p{
     color: rgb(14, 125, 177);
 }
 
+/* FORM */
+
 form{
     background-color: rgb(223, 255, 205);
 }
@@ -247,27 +249,6 @@ footer{
     font-size: 12px;
 }
 
-footer img{
-    vertical-align: middle;
-}
-
-
-
-@media screen and (max-width: 0px)
-{
-    body{
-        grid-template-columns: minmax(375px, 700px) 10px;
-        grid-template-rows: auto auto auto auto 50px;
-        grid-template-areas:
-        "header ."
-        "globnav ."
-        "sidenav ."
-        "main ."
-        "footer .";
-    }
-
-    aside{
-        visibility: hidden;
-        display: none;
-    }
+#centerImage{
+  text-align: center;
 }

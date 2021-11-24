@@ -213,34 +213,6 @@ nav ul > li{
     background-color: rgb(112, 190, 226);
 }
 
-.dropdownmenu{
-    position: relative;
-    display:inline-block;
-}
-
-.dropdowncontent{
-    display:none;
-    position: absolute;
-    min-width: 160px;
-    background-color: rgb(112, 190, 226);
-    z-index: 1;
-    box-shadow: 8px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.dropdowncontent a:link, .dropdowncontent a:visited
-{
-    background-color: rgb(112, 190, 226)  !important;
-}
-
-.dropdowncontent a:hover, .dropdowncontent a:active
-{
-    background-color: rgb(128, 195, 226) !important;
-}
-
-.dropdownmenu:hover .dropdowncontent {
-    display: block;
-}
-
 /*FOOTER*/
 footer{
     grid-area: footer;

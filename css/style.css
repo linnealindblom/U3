@@ -77,7 +77,6 @@ main p{
     border-radius: 50%;
     opacity: 0.7;
     float: left;
-    clear: top;
     margin: 10px;
     object-fit: cover;
 
